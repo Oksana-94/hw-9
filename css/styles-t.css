@@ -1,0 +1,56 @@
+@import url('reset.css');
+
+.container {
+    width: 1200px; 
+    margin: 0 auto;
+}
+
+.table {
+    margin: 100px auto;
+}
+
+table, td{
+    border: 2px solid black;
+}
+
+td{
+    width: 100px;
+    height: 100px;
+    background: olive;
+}
+
+.grey {
+    background: grey;
+}
+
+.greenyellow {
+    background: greenyellow;
+}
+
+.green {
+    background: green;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.blue {
+    background: blue;
+}
+
+
+
+
+.title {
+    text-align: center;
+}
+
+h1 + img {
+    width: 200px; 
+    height: 300px;
+}
+
+div > h2 {
+    background: pink;
+}

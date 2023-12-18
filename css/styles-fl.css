@@ -1,0 +1,167 @@
+@import url('reset.css');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* .first {
+    font-size: 0;
+} */
+
+.first > div {
+    /* font-size: 16px;
+    display: inline-block; */
+    width: 400px;
+    height: 400px;
+    background: aqua;
+    outline: 2px solid red;
+}
+
+.second {
+    /* font-size: 0; */
+    height: 400px;
+}
+
+.second > div {
+    /* font-size: 16px;
+    display: inline-block; */
+    background: greenyellow;
+    width: 800px;
+}
+
+.second > div + div {
+    width: 400px;
+}
+
+.second > div > div {
+    outline: 2px solid red;
+    height: 200px;
+}
+
+.second > div + div > div {
+    height: 133.33px;
+}
+
+.third {
+    /* font-size: 0; */
+    height: 400px;
+}
+
+
+.third > div {
+    /* font-size: 16px;
+    display: inline-block; */
+    width: 400px;
+    background: orange;
+    outline: 2px solid red;
+}
+
+.third > div > div {
+    background: orange;
+    outline: 2px solid red;
+    height: 200px;
+}
+
+.third > div > div > div {
+    background: orange;
+    outline: 2px solid red;
+    height: 200px;
+    width: 400px;
+    font-size: 16px;
+}
+
+.third > div + div {
+    width: 800px;
+}
+
+.third > div {
+    
+    height: 400px;
+}
+
+.inline {
+    /* display: inline-block;
+    font-size: 16px; */
+}
+
+.inline > div {
+    height: 100px;
+    outline: 2px solid red;
+}
+
+.font {
+    font-size: 0;
+}
+
+.first-float {
+    background: orange;
+}
+
+.first-float > div {
+    width: 400px;
+    height: 400px;
+    outline: 4px solid red;
+    float: left;
+}
+
+.second-float {
+    background: green;
+}
+
+.second-float > div {
+    width: 800px;
+    float: left;
+}
+
+
+.second-float > div + div {
+    width: 400px;
+}
+
+.second-float > div > div {
+    height: 200px;
+    outline: 4px solid red;
+}
+
+.second-float > div + div > div {
+    height: 133.33px;
+}
+
+.third-float {
+    background: aqua;
+}
+
+.third-float > div {
+    width: 400px;
+    height: 400px;
+    outline: 4px solid red;
+    float: left;
+}
+
+.third-float > div + div {
+    width: 800px;
+}
+
+.third-float > div > div > div {
+    outline: 4px solid red;
+    height: 200px;
+    width: 400px;
+    float: left;
+}
+
+.third-float > div + div > div {
+    height: 200px;
+}
+
+.third-float > div > div > div > div {
+    height: 100px;
+    /* width: 400px; */
+    outline: 4px solid red;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: block;
+}

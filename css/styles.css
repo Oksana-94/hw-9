@@ -1,0 +1,110 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fredericka the Great';
+    src: url('../fonts/FrederickatheGreat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    font-family: 'Lora';
+    font-weight: 700;
+    padding: 20px 0;
+    background: pink;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-list {
+    position: relative;
+    z-index: 20;
+    
+}
+
+.item-list .link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: orange;
+    display: block;
+    white-space: nowrap;
+}
+
+.item-list .link:hover {
+    background: red;
+}
+
+.second-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 20px;
+    display: none;
+    font-family: 'Fredericka the Great';
+    font-weight: 400;
+}
+
+.second-list .link {
+    background: yellow;
+}
+
+.item-list:hover .second-list {
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.relative:hover .third-list {
+    display: block;
+}
+
+.third-list {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    display: none;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.third-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 56px;
+    background: yellow;
+    display: block;
+    width: 100%;
+}
+
+.third-link:hover {
+    background: red;
+}

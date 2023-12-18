@@ -1,0 +1,78 @@
+@import url('reset.css');
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.first {
+    display: flex;
+}
+
+.first > div {
+    width: 400px;
+    height: 400px;
+    background: aqua;
+    outline: 2px solid red;
+}
+
+.second {
+    display: flex;
+}
+
+.second > div {
+    background: greenyellow;
+    width: 800px;
+}
+
+.second > div + div {
+    width: 400px;
+}
+
+.second > div > div {
+    outline: 2px solid red;
+    height: 200px;
+}
+
+.second > div + div > div {
+    height: 133.33px;
+}
+
+.third {
+    display: flex;
+}
+
+
+.third > div {
+    width: 400px;
+    background: orange;
+    outline: 2px solid red;
+    height: 400px;
+}
+
+.third > div > div {
+    background: orange;
+    outline: 2px solid red;
+    height: 200px;
+}
+
+.third > div > div > div {
+    background: orange;
+    outline: 2px solid red;
+    height: 200px;
+    width: 400px;
+    /* font-size: 16px; */
+}
+
+.third > div + div {
+    width: 800px;
+}
+
+.third > div > div > div > div {
+    height: 100px;
+    outline: 2px solid red;
+}
+
+.flex {
+    display: flex;
+}

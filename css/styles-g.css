@@ -1,0 +1,118 @@
+@import url('reset.css');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+    background: pink;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-list {
+    position: relative;
+    z-index: 20;
+}
+
+.item-list .link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: orange;
+    display: block;
+}
+
+.item-list .link:hover {
+    background: red;
+}
+
+.second-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 20px;
+    display: none;
+}
+
+.second-list .link {
+    background: yellow;
+}
+
+.item-list:hover .second-list {
+    display: block;
+}
+
+.relative {
+    position: relative;
+}
+
+.relative:hover .third-list {
+    display: block;
+}
+
+.third-list {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: none;
+}
+
+.third-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 52px;
+    background: yellow;
+    display: block;
+    width: 100%;
+}
+
+.third-link:hover {
+    background: red;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    gap: 10px;
+}
+
+.block {
+    height: 400px;
+    width: 49.58%;
+    position: relative;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.paragraph {
+    position: absolute;
+    top: 50%;
+    height: 200px;
+    background: rgba(238, 232, 232, 0.5);
+    margin: -100px 10px 0;
+    padding: 0 10px;
+    text-align: justify;
+    border-radius: 8px;
+    overflow: auto;
+    display: none;
+}
+
+.block:hover .paragraph {
+    display: block;
+}
+
+.list {
+    align-items: center;
+    justify-content: center;
+}
